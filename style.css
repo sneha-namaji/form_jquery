@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f5f3f0;
+}
+.main_container{
+    width: 50%;
+    /* border: 2px solid black; */
+    background-color: white;
+    border-radius: 10px;
+    height: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    color: #3b3b3b;
+    font-weight: 400;
+}
+.nam_lab{
+    font-size: 17px;
+}
+.name_class{
+    position: absolute;
+    top: 45px;
+    width: 95%;
+    padding: 5px;
+    height: 40px;
+    font-size: 15px;
+}
+.roll_lab{
+    position: absolute;
+    font-size: 17px;
+    top: 94px;
+}
+.rollNo{
+    position: absolute;
+    top: 120px;
+    width: 95%;
+    padding: 5px;
+    height: 40px;
+    font-size: 15px;
+}
+.gender_div{
+    position: absolute;
+    top: 170px;
+}
+.gen_lab{
+    font-size: 17px;
+}
+.inp_gen{
+    margin-left: 15px;
+    margin-top: 8px;
+}
+.dob_clas{
+    position: absolute;
+    top: 225px;
+    font-size: 17px;
+}
+.dob{
+    position: absolute;
+    top: 252px;
+    width: 95%;
+    height: 40px;
+    font-size: 15px;
+    padding: 5px;
+}
+.class{
+    position: absolute;
+    top: 302px;
+    font-size: 17px; 
+}
+.class_inp{
+    position: absolute;
+    top: 327px;
+    width: 95%;
+    height: 40px;
+    font-size: 15px;
+    padding: 5px;
+}
+.mobi_lab{
+    position: absolute;
+    top: 372px;
+    font-size: 17px; 
+}
+.mobile{
+    position: absolute;
+    top: 400px;
+    width: 95%;
+    height: 40px;
+    font-size: 15px;
+    padding: 5px;
+}
+.che_lab{
+    position: absolute;
+    top: 450px;
+    font-size: 17px; 
+}
+.subm_btn{
+    position: absolute;
+    top: 500px;
+    padding: 8px;
+    width: 80px;
+    background-color: #3f3ff8;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 17px; 
+}
+.heading_2{
+    text-align: center;
+}
+#studentTable{
+    border: 2px solid black;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.name_th{
+    background-color: #23e98c;
+}
+#studentData{
+    border: 2px solid black;
+    width: 50%;
+    margin-top: 30px;
+    margin: auto;
+}
