@@ -60,11 +60,11 @@
         <thead>
             <tr class="">
                 <th class="name_th">Name</th>
-                <th class="name_th">Roll No</th>
-                <th class="name_th">Gender</th>
-                <th class="name_th">Date of Birth</th>
-                <th class="name_th">Class</th>
-                <th class="name_th">Mobile Number</th>
+                <th class="name_tha">Roll No</th>
+                <th class="name_tha">Gender</th>
+                <th class="name_tha">Date of Birth</th>
+                <th class="name_tha">Class</th>
+                <th class="name_tha">Mobile Number</th>
             </tr>
         </thead>
         <tbody id="studentData"></tbody>
@@ -80,21 +80,27 @@
         <input type="date" id="today" disabled> <br><br>
 
         <label for="last30days">Last 30 Days:</label>
-        <input type="date" id="last30days" disabled>
+        <input type="date" id="last30days" disabled> <br><br>
+
+        <label for="last60days">Last 60 Days:</label>
+        <input type="date" id="last60days" disabled>
 
         <br><br>
 
         <!-- Date Input Field with Validation -->
-        <label for="customDate">Select Date (Last 60 Days):</label>
-        <input type="date" id="customDate" onchange="validateDate()">
+        <label for="fromDate">From Date (Last 60 Days):</label>
+        <input type="date" id="fromDate" onchange="validateDate()"> TO
+        <label for="toDate"></label>
+        <input type="date" id="toDate" disabled onchange="validateDate()">
+
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script> -->
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+
     <script src="student.js"></script>
 
 </body>

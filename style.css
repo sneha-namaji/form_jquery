@@ -121,6 +121,10 @@ body{
 }
 .name_th{
     background-color: #23e98c;
+    cursor: default;
+}
+.name_tha{
+    background-color: #23e98c;
 }
 #studentData{
     border: 2px solid black;
