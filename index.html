@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>student Information</title>
+
     <link rel="stylesheet" href="./style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;700;900&family=Inter&family=Lato:ital,wght@0,400;0,900;1,300&family=Oswald:wght@200&family=Poppins:ital,wght@0,400;1,300&family=Roboto+Mono:ital@1&family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
@@ -65,41 +67,13 @@
       </thead>
       <tbody id="studentData"></tbody>
     </table>
-<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJq1LNfOu91320/NMZx1twRo8QtmKMRdAu8" crossorigin="anonymous"></script> -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"  crossorigin="anonymous"></script>
-
-
-    <!-- Include Moment.js -->
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"  crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js" integrity="sha512-hUhvpC5f8cgc04OZb55j0KNGh4eh7dLxd/dPSJ5VyzqDWxsayYbojWyl5Tkcgrmb/RVKCRJI1jNlRbVP4WWC4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>
-    $(document).ready(function() {
-    $("#studentForm").submit(function(event) {
-        event.preventDefault();
+    
+    <script src="./student.js"></script>
 
-        var name = $(".name_class").val();
-        var rollNo = $(".rollNo").val();
-        var gender = $("input[name='gender']:checked").val();
-        var dob = $(".dob").val();
-        var studentClass = $(".class_inp").val();
-        var mobile = $(".mobile").val();
-
-        var tableRow = $("<tr>").append(
-            $("<td>").text(name),
-            $("<td>").text(rollNo),
-            $("<td>").text(gender),
-            $("<td>").text(dob),
-            $("<td>").text(studentClass),
-            $("<td>").text(mobile)
-        );
-
-        $("#studentData").append(tableRow);
-        // Clear form inputs
-        $("#studentForm")[0].reset();
-
-    });
-});
-
-   </script>
 </body>
 
 </html>
