@@ -22,10 +22,10 @@
     <div class="main_container">
         <form id="studentForm">
             <label class="nam_lab" for="name">Name:</label> <br>
-            <input type="text" name="name" class="name_class">
+            <input type="text" name="name" class="name_class" required>
 
             <label class="roll_lab" for="rollNo">Roll No:</label><br>
-            <input type="text" class="rollNo" name="rollNo">
+            <input type="text" class="rollNo" name="rollNo"required>
 
             <div class="gender_div">
                 <label class="gen_lab">Gender:</label><br>
@@ -56,15 +56,18 @@
 
     </div>
     <h2 class="heading_2">Student Information</h2>
+    <input type="text" id="searchInput" placeholder="Search...">
+
     <table id="studentTable">
         <thead>
             <tr class="">
-                <th class="name_th">Name</th>
+                <th class="name_th"><span id="sortIcon" class="sort-icon">&#9650;</span>Name</th>
                 <th class="name_tha">Roll No</th>
                 <th class="name_tha">Gender</th>
                 <th class="name_tha">Date of Birth</th>
                 <th class="name_tha">Class</th>
                 <th class="name_tha">Mobile Number</th>
+                <th class="name_tha">Delete</th>
             </tr>
         </thead>
         <tbody id="studentData"></tbody>
@@ -89,7 +92,7 @@
 
         <!-- Date Input Field with Validation -->
         <label for="fromDate">From Date (Last 60 Days):</label>
-        <input type="date" id="fromDate" onchange="validateDate()"> TO
+        <input type="date" id="fromDate" onchange="validateDate()"> &nbsp; TO &nbsp;
         <label for="toDate"></label>
         <input type="date" id="toDate" disabled onchange="validateDate()">
 
